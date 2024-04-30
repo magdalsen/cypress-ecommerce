@@ -1,6 +1,6 @@
 # About
 
-Repository contains three tests for website https://www.sapfioneer.com/
+Repository contains three tests for website https://www.allegro.pl/. Tests are just example and will not work on production environment due to the captcha functionality.
 
 ## Installation
 
@@ -20,9 +20,6 @@ or
 ```bash
 npx cypress run
 ```
-### Report example
-
-![alt text](image.png)
 
 ## Technology
 
