@@ -1,5 +1,7 @@
 
-const getAcceptCookies = () => {
+// Buttons
+
+const getAcceptCookiesBox = () => {
     return '[data-testid="accept_home_view_action"]';
 }
 
@@ -19,10 +21,16 @@ const getLoginButton = () => {
     return '[data-analytics-click-value="login-button"]';
 }
 
+// Inputs
+
 const getLoginEmailBox = () => {
-    return '[id="login"]';
+    return 'input[id="login"]';
 }
 
 const getLoginPasswordBox = () => {
-    return '[id="password"]';
+    return 'input[id="password"]';
+}
+
+const getSearchBox = () => {
+    return 'input[type="search"]';
 }

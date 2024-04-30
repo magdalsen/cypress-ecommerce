@@ -1,5 +1,4 @@
 import { MailSlurp } from "mailslurp-client";
-const password = Cypress.env('PASSWORD');
 
 Cypress.Commands.add('generateEmail', async function() {
     await cy.mailslurp()
@@ -9,12 +8,7 @@ Cypress.Commands.add('generateEmail', async function() {
       // save the inbox values for access in other tests
       cy.wrap(inbox.id).as('inboxId');
       cy.wrap(inbox.emailAddress).as('emailAddress');
-      cy.get('input#email').type(inbox.emailAddress);
-      cy.get('input#password').type(password);
-      cy.get('[role="radiogroup"] > :nth-child(2)').click();
-      cy.get('div > label:nth-child(5)').click();
     })
-    cy.submitButton().click();
 })
 
 Cypress.Commands.add('confirmEmail', async function() {

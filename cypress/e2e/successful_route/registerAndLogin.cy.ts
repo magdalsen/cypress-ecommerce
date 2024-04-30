@@ -1,16 +1,17 @@
 
-describe('User Registration and Login', () => {
+describe('User Registration and Login functionality', () => {
     const password = Cypress.env('PASSWORD');
 
     beforeEach(() => {
       cy.goToMainPage();
       cy.viewport(1224, 604);
-      cy.cookiesPopup().click();
+      cy.cookiesPopupBox().click();
     })
 
     it('Register new user', async function() {
       cy.goToRegistrationPage();
       cy.generateEmail();
+      cy.registerNewUser();
       cy.confirmEmail();
       cy.confirmBox().should('contain', 'Dziękujemy za założenie konta.');
       cy.logoutButton().click();

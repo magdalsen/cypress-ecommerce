@@ -14,6 +14,14 @@ declare namespace Cypress {
     }
 }
 
+// Popup
+
+declare namespace Cypress {
+    interface Chainable {
+        cookiesPopupBox(): Chainable<void>
+    }
+}
+
 // E-mail
 
 declare namespace Cypress {
@@ -28,19 +36,11 @@ declare namespace Cypress {
     }
 }
 
-// Return statements
+// Registration
 
 declare namespace Cypress {
     interface Chainable {
-        getGetInTouchButton(): string
-    }
-}
-
-//
-
-declare namespace Cypress {
-    interface Chainable {
-        cookiesPopup(): Chainable<void>
+        registerNewUser(): Chainable<void>
     }
 }
 
@@ -81,5 +81,11 @@ declare namespace Cypress {
 declare namespace Cypress {
     interface Chainable {
         loginPasswordBox(): Chainable<void>
+    }
+}
+
+declare namespace Cypress {
+    interface Chainable {
+        searchBox(): Chainable<void>
     }
 }
