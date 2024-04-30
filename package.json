@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@types/grecaptcha": "^3.0.9",
+    "cypress": "^13.8.1",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "cypress-mailslurp": "^1.9.0",
+    "typescript": "^5.3.3"
+  }
+}
