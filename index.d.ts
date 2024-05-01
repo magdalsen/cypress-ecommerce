@@ -89,3 +89,15 @@ declare namespace Cypress {
         searchBox(): Chainable<void>
     }
 }
+
+declare namespace Cypress {
+    interface Chainable {
+        registrationEmailBox(): Chainable<void>
+    }
+}
+
+declare namespace Cypress {
+    interface Chainable {
+        registrationPasswordBox(): Chainable<void>
+    }
+}

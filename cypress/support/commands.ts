@@ -36,3 +36,11 @@ Cypress.Commands.add('loginPasswordBox', () => {
 Cypress.Commands.add('searchBox', () => {
     cy.get(getSearchBox());
 })
+
+Cypress.Commands.add('registrationEmailBox', () => {
+    cy.get(getRegistrationEmailBox());
+})
+
+Cypress.Commands.add('registrationPasswordBox', () => {
+    cy.get(getRegistrationPasswordBox());
+})

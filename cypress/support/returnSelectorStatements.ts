@@ -34,3 +34,11 @@ const getLoginPasswordBox = () => {
 const getSearchBox = () => {
     return 'input[type="search"]';
 }
+
+const getRegistrationEmailBox = () => {
+    return 'input#email';
+}
+
+const getRegistrationPasswordBox = () => {
+    return 'input#password';
+}
